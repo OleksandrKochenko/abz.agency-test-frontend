@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/abz.agency-test-frontend/static/css/main.7acaea2f.css",
-    "main.js": "/abz.agency-test-frontend/static/js/main.07d3183d.js",
+    "main.js": "/abz.agency-test-frontend/static/js/main.30f7d3d3.js",
     "index.html": "/abz.agency-test-frontend/index.html",
     "main.7acaea2f.css.map": "/abz.agency-test-frontend/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/abz.agency-test-frontend/static/js/main.07d3183d.js.map"
+    "main.30f7d3d3.js.map": "/abz.agency-test-frontend/static/js/main.30f7d3d3.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.30f7d3d3.js"
   ]
 }
