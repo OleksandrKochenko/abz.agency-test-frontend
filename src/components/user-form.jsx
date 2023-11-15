@@ -1,39 +1,42 @@
 import {
-  Button,
+  //Button,
   Dialog,
-  FormControl,
-  FormLabel,
-  InputLabel,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
+  // FormControl,
+  // FormLabel,
+  // InputLabel,
+  // MenuItem,
+  // Select,
+  // TextField,
+  // Typography,
 } from '@mui/material';
-import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { addUser, fetchPositions, fetchToken } from 'services/api';
+import {
+  addUser,
+  //fetchPositions,
+  fetchToken,
+} from 'services/api';
 
 export const UserForm = ({ open, onClose }) => {
   const [token, setToken] = useState('');
-  const [positionId, setPositionId] = useState('');
-  const [positions, setPositions] = useState([]);
+  // const [positionId, setPositionId] = useState('');
+  // const [positions, setPositions] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
       const data = await fetchToken();
       setToken(data.token);
     };
-    const getPositions = async () => {
-      const data = await fetchPositions();
-      setPositions(data.positions);
-    };
+    // const getPositions = async () => {
+    //   const data = await fetchPositions();
+    //   setPositions(data.positions);
+    // };
     getData();
-    getPositions();
+    //getPositions();
   }, []);
 
-  const handleChange = e => {
-    setPositionId(e.target.value);
-  };
+  // const handleChange = e => {
+  //   setPositionId(e.target.value);
+  // };
 
   const handleSubmit = async e => {
     e.preventDefault();
