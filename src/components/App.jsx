@@ -35,7 +35,12 @@ export const App = () => {
           justifyContent: 'space-evenly',
         }}
       >
-        <Button onClick={handleShowUsers} type="button" variant="contained">
+        <Button
+          disabled={!nextLink && users.length > 0}
+          onClick={handleShowUsers}
+          type="button"
+          variant="contained"
+        >
           {users.length > 0 ? 'More users' : 'Show users'}
         </Button>
         <Button onClick={handleOpen} type="button" variant="contained">

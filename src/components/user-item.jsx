@@ -15,7 +15,8 @@ export const UserItem = ({ open, onClose, userId }) => {
 
   return (
     <Dialog open={open} onClose={onClose}>
-      <div style={{ width: 250, height: 100, padding: 20 }}>
+      <div style={{ width: 300, height: 150, padding: 10 }}>
+        <h3>User fetched by ID</h3>
         <p>name: {userData.name}</p>
         <p>id: {userData._id}</p>
       </div>
